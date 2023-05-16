@@ -19,6 +19,9 @@ from Bio.SeqUtils import MeltingTemp as mtmp
 # 5 mandatory arguments > file path , size of kmer   hamming distance and Tm
 parser = argparse.ArgumentParser(
     description="Tool for identifying unique oligos from Multi-FASTA record."
+                "\nPLEASE NOTE: Edit MySQL database parameters in the code "
+                "before running the script",
+    formatter_class=argparse.RawTextHelpFormatter
 )
 
 parser.add_argument(
