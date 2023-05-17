@@ -33,6 +33,19 @@ Example useage:
 ```bash
 python oligo_kmer.py -f /path/to/your/file.fasta -k 25 -d 5 -min_tm 50 -max_tm 60
 ```
+## PHP GUI Interface
+
+Along with the Python script `oligo_kmer.py`, there is a  PHP script `retrieve_oligo_kmer.php`. This script provides a GUI interface for accessing the oligonucleotides stored in the SQL database.
+
+### Usage
+
+To use the PHP script, navigate to the location of the `retrieve_oligo_kmer.php` script in your web browser. 
+
+To retrieve oligonucleotides for a specific contig, enter the contig ID into the form and press submit(only 20 unique oligonucleotides will be displyed). 
+
+The script will then connect to the SQL database, retrieve up to 20 unique kmers associated with that contig ID, and display them on the web page.
+
+Please note: The database connection parameters in the PHP script (server, username, password, database) must be edited to match your own MySQL database setup before using the script.
 
 ## Future Developments
 
