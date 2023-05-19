@@ -44,7 +44,7 @@ To run the `Oligo_kmer` python script, you will need to provide the following ar
 - `-min_tm`: Minimum Tm in Celsius.
 - `-max_tm`: Maximum Tm in Celsius.
 
-A small fasta file(mini.fasta) is provided for testing the script. You can get the mini.fasta from:
+A small fasta file(mini.fasta) is provided for testing the script. You can get the mini.fasta from: https://github.com/sujith-manavalan/oligo_kmer/blob/main/mini.fasta
 
 Example useage:
 
