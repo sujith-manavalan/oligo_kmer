@@ -14,13 +14,29 @@ The Oligo_Kmer tool is designed to build a database of unique oligonucleotides f
 
 - **GUI Interface**: A GUI interface is provided for easy data retrieval from the SQL database, enhancing broader user accessibility.
 
+## Flow Chart of the Script
+
+1. **Parse command line arguments**: The script takes in five command line this include multi-FASTA file path, the desired kmer size, the Hamming distance threshold, and Tm range.
+
+2. **Generate Kmers followed by filteration**: For each sequence in the multi-FASTA file, the script generates all the possible kmers from both the forward and reverse strand. These kmers then pass through a series of filters mentioned below 
+    - Kmers containing 'N' are ignored.
+    - Kmers with a stretch of 5 or more repeating nucleotides are discarded.
+    - Kmers with a GC content below 40% or above 60% are discarded.
+    - Kmers with a Tm outside the user-specified range are discarded.
+    - Kmers with self-complementarity (above 80% identity score) are discarded.
+
+3. **Identify Unique Kmers**: The script then iterates over the kmers of each sequence, comparing each kmer to the kmers of all other sequences. If the Hamming distance between the kmer and all other kmers is greater than the threshold, the kmer is considered unique. These unique kmers are then stored in the MySQL database, with their respective sequence IDs. These kmers/oliogs can then be accessed using web page by providing the respective FASTA record ID ( use the provide PHP script)
+
+
 ## How to Use
+
+### Usage of oligo_kmer.py 
 
 Please note: Before running the script, edit the MySQL database parameters in the code to match your database configuration.
 
-To run the `Oligo_Kmer` python script, you will need to provide the following arguments. 
+To run the `Oligo_kmer` python script, you will need to provide the following arguments. 
 
-- `-f`: Path to the multi-FASTA file.
+- `-f`: Path to multi-FASTA file.
 - `-k`: Required oligomer size.
 - `-d`: Hamming distance threshold.
 - `-min_tm`: Minimum Tm in Celsius.
@@ -33,11 +49,9 @@ Example useage:
 ```bash
 python oligo_kmer.py -f /path/to/your/file.fasta -k 25 -d 5 -min_tm 50 -max_tm 60
 ```
-## PHP GUI Interface
+### Usage of retieve_oliog_kmer.php
 
 Along with the Python script `oligo_kmer.py`, there is a  PHP script `retrieve_oligo_kmer.php`. This script provides a GUI interface for accessing the oligonucleotides stored in the SQL database.
-
-### Usage
 
 To use the PHP script, navigate to the location of the `retrieve_oligo_kmer.php` script in your web browser. 
 
