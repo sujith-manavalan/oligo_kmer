@@ -1,8 +1,6 @@
 # oligo_kmer tool
 
-The rapid detection of pathogenic microbes is crucial for biosurveillance, disease diagnostics, and epidemiological studies. Oligonucleotide-based hybridization methods provide cost-effective and highly specific detection even at the strain level.
-
-The oligo_kmer tool is designed to build a database of unique oligonucleotides for pathogens, which can be used for designing hybridization chips for the rapid identification of pathogens.
+Rapid detection of pathogenic microbes is crucial for biosurveillance, disease diagnostics, and epidemiological studies. Oligonucleotide-based hybridization methods provide cost-effective and highly specific detection of pathogens even at the strain level. The Oligo_kmer tool addresses the limitations of existing oligonucleotide design methods, providing a user-friendly GUI interface for retrieving DNA probes, efficient memory usage, and customization options for DNA probe design. Moreover, the tool utilizes an SQL database for storing the unique oligonucleotides which could help in better data management and data sharing. The features implemented in the tool help in designing high-quality DNA probes for hybridization techniques, thereby enabling faster disease diagnostics in the clinics and better biosurveillance strategies.
 
 ## Features
 
