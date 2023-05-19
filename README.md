@@ -27,6 +27,7 @@ The oligo_kmer tool is designed to build a database of unique oligonucleotides f
 
 3. **Identify Unique Kmers**: The script then iterates over the kmers of each sequence, comparing each kmer to the kmers of all other sequences. If the Hamming distance between the kmer and all other kmers is greater than the threshold, the kmer is considered unique. These unique kmers are then stored in the MySQL database, with their respective sequence IDs. These kmers/oliogs can then be accessed using web page by providing the respective FASTA record ID ( use the provide PHP script)
 
+
 ![Flowchart of the script](./flowchart.png)
 
 ## How to Use
