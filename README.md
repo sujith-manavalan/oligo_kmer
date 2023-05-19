@@ -1,8 +1,8 @@
-# Oligo_Kmer Tool
+# oligo_kmer Tool
 
 The rapid detection of pathogenic microbes is crucial for biosurveillance, disease diagnostics, and epidemiological studies. Oligonucleotide-based hybridization methods provide cost-effective and highly specific detection even at the strain level.
 
-The Oligo_Kmer tool is designed to build a database of unique oligonucleotides for pathogens, which can be used for designing hybridization chips for the rapid identification of pathogens.
+The oligo_kmer tool is designed to build a database of unique oligonucleotides for pathogens, which can be used for designing hybridization chips for the rapid identification of pathogens.
 
 ## Features
 
@@ -49,7 +49,7 @@ Example useage:
 ```bash
 python oligo_kmer.py -f /path/to/your/file.fasta -k 25 -d 5 -min_tm 50 -max_tm 60
 ```
-### Usage of retieve_oliog_kmer.php
+### Usage of retrieve_oliog_kmer.php
 
 Along with the Python script `oligo_kmer.py`, there is a  PHP script `retrieve_oligo_kmer.php`. This script provides a GUI interface for accessing the oligonucleotides stored in the SQL database.
 
