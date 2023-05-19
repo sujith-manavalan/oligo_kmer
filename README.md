@@ -44,7 +44,7 @@ To run the `Oligo_kmer` python script, you will need to provide the following ar
 - `-min_tm`: Minimum Tm in Celsius.
 - `-max_tm`: Maximum Tm in Celsius.
 
-A small fasta file(mini.fasta) is provided for testing 
+A small fasta file(mini.fasta) is provided for testing the script
 
 Example useage:
 
@@ -52,6 +52,8 @@ Example useage:
 python oligo_kmer.py -f /path/to/your/file.fasta -k 25 -d 5 -min_tm 50 -max_tm 60
 ```
 To run the script with real dataset use the complete viral refseqgenome which can be found from https://ftp.ncbi.nlm.nih.gov/refseq/release/viral/
+
+Please note : if using bacterial genomes make sure to remove plasmid sequences from the genome
 
 ### Usage of retrieve_oliog_kmer.php
 
