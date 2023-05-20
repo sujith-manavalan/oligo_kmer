@@ -47,7 +47,7 @@ A small fasta file(mini.fasta) is provided for testing the script. You can get t
 Example useage:
 
 ```bash
-python oligo_kmer.py -f /path/to/your/file.fasta -k 25 -d 5 -min_tm 50 -max_tm 60
+python3 oligo_kmer.py -f /path/to/your/file.fasta -k 25 -d 5 -min_tm 50 -max_tm 60
 ```
 To run the script with real dataset use the complete viral refseqgenome which can be found from https://ftp.ncbi.nlm.nih.gov/refseq/release/viral/
 
