@@ -67,7 +67,7 @@ Please note: The database connection parameters in the PHP script (server, usern
 
 ## Get this tool
 ```bash
-wget 
+wget https://github.com/sujith-manavalan/oligo_kmer/blob/main/oligo_kmer.py
 chmod 755 oligo_kmer.py
 ```
 
