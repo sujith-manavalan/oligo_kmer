@@ -66,7 +66,7 @@ The script will then connect to the SQL database, retrieve up to 20 unique kmers
 Please note: The database connection parameters in the PHP script (server, username, password, database) must be edited to match your own MySQL database setup before using the script.
 
 ### For additional details
-https://github.com/sujith-manavalan/oligo_kmer/blob/main/project_description_smanavalan.docx
+https://github.com/sujith-manavalan/oligo_kmer/blob/main/project_description_smanavalan.pdf
 
 ## Future developments
 
