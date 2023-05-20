@@ -65,6 +65,12 @@ The script will then connect to the SQL database, retrieve up to 20 unique kmers
 
 Please note: The database connection parameters in the PHP script (server, username, password, database) must be edited to match your own MySQL database setup before using the script.
 
+## Get this tool
+```bash
+wget 
+chmod 755 oligo_kmer.py
+```
+
 ## Future developments
 
 I welcome any suggestions/contributions for improvement of the code . I am hoping to further optimize the code for larger datasets, add multi-threading feature as well as additional customization options.
