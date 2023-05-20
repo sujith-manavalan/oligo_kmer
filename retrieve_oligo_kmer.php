@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-<h1>Oligo_kmer: K-mer based tool for the design of oligonucleotide probes</h1>
+<h1>Oligo_kmer:K-mer based tool for the design of oligonucleotide probes</h1>
 
 <!-- display details of the algorithm -->
 <h3>Oligo-kmer algorithm highlights:</h3>
@@ -39,7 +39,7 @@
 
 <!-- Process input from web user to collect the contig_id info -->
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  Enter the contig_id you are looking for: <input type="text" name="contig_id">
+  Enter the contig_id : <input type="text" name="contig_id">
   <input type="submit">
 </form>
 
